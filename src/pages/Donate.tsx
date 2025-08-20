@@ -136,14 +136,22 @@ const Donate = () => {
       <p><strong>IFSC Code:</strong> HDFC0000239</p>
     </div>
 
+<<<<<<< HEAD
     {/* Right: QR Code */}
+=======
+    {/* Right: QR Code 
+>>>>>>> nikhil
     <div className="flex-shrink-0 mt-6 md:mt-0">
       <img
         src="/images/upi-pay.png" // Make sure to place this image correctly
         alt="QR Code for Payment"
         className="w-48 h-48 object-contain mx-auto"
       />
+<<<<<<< HEAD
     </div>
+=======
+    </div>*/}
+>>>>>>> nikhil
   </div>
 </div>
 

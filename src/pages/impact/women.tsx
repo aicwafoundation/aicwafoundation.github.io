@@ -62,6 +62,19 @@ const WomenPage = () => {
           </div>
         </section>
 
+<<<<<<< HEAD
+=======
+
+{/* Full-Width Image */}
+<section className="py-10 bg-[#f2f2f2] md:py-16">
+  <img
+    src="/images/women-01.jpeg"
+    alt="Rural Support"
+    className="w-full h-auto object-cover"
+  />
+</section>
+
+>>>>>>> nikhil
         {/* Women's Welfare Key Focus Areas */}
 <section className="py-16 bg-[#f2f2f2]">
   <div className="container mx-auto px-4 md:px-10">

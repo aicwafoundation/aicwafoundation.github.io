@@ -80,7 +80,11 @@ We don’t just support workers. We honour their legacy
                 JVLR, Powai, Mumbai - 400076
               </p>
               <p className="mb-2">
+<<<<<<< HEAD
                 <strong>Contact No:</strong> 7700999457
+=======
+                <strong>Contact No:</strong> 9820982115
+>>>>>>> nikhil
               </p>
               <p>
                 <strong>Email:</strong> info@aicwa.in
