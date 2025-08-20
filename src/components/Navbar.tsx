@@ -179,18 +179,6 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-<<<<<<< HEAD
-        <div className={cn(
-          "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
-          isMobileMenuOpen ? "max-h-screen opacity-100 py-4" : "max-h-0 opacity-0"
-        )}>
-          <div className="flex flex-col space-y-4">
-            <Link to="/about" className={linkClasses(scrolled)} onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
-            <Link to="/getinvolved" className={linkClasses(scrolled)} onClick={() => setIsMobileMenuOpen(false)}>Volunteer</Link>
-
-            {/* Mobile Dropdown */}
-            <button onClick={() => setIsImpactOpen(!isImpactOpen)} className={linkClasses(scrolled)}>
-=======
         <div
           className={cn(
             "md:hidden fixed inset-0 transition-all duration-300 ease-in-out z-40",
@@ -203,7 +191,6 @@ const Navbar = () => {
 
             {/* Mobile Dropdown */}
             <button onClick={() => setIsImpactOpen(!isImpactOpen)} className="text-black text-lg hover:underline">
->>>>>>> nikhil
               Area of Impact <ChevronDown size={16} className="ml-1 inline-block" />
             </button>
             {isImpactOpen && (
@@ -212,11 +199,7 @@ const Navbar = () => {
                   <Link
                     key={idx}
                     to={to}
-<<<<<<< HEAD
-                    className="block px-4 py-2 text-sm text-aicwa-darkGray text-white hover:bg-gray-100"
-=======
                     className="block text-black text-base hover:underline"
->>>>>>> nikhil
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {label}
@@ -225,11 +208,6 @@ const Navbar = () => {
               </div>
             )}
 
-<<<<<<< HEAD
-            <Link to="/gallery" className={linkClasses(scrolled)} onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
-            <Link to="/contact" className={linkClasses(scrolled)} onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
-            <Link to="/donate" className="px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-opacity-90 transition-colors inline-block w-fit" onClick={() => setIsMobileMenuOpen(false)}>Donate</Link>
-=======
             <Link to="/gallery" className="text-black text-lg hover:underline" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
             <Link to="/contact" className="text-black text-lg hover:underline" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
             <Link
@@ -239,7 +217,6 @@ const Navbar = () => {
             >
               Donate
             </Link>
->>>>>>> nikhil
           </div>
         </div>
       </div>
