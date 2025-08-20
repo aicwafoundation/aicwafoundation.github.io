@@ -3,24 +3,27 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main   # whenever you push to main branch
+      - main   # Deploy when pushing to main
 
+permissions:
+  contents: write
+  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20   # use LTS for stability
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci   # faster & reproducible
 
       - name: Build project
         run: npm run build
